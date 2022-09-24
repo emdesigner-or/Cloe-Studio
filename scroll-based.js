@@ -40,7 +40,7 @@ ScrollTrigger.create({
     duration: 0.2,
   }),
     onLeaveBack: () => gsap.to('#explore-text', {
-    color: "hsla(0, 0%, 100%, 0.7)",
+    color: "hsla(0, 0%, 0%, 0.7)",
     duration: 0.2,
   }),
   onEnterBack: () => gsap.to('#explore-text', {

@@ -31,19 +31,19 @@ ScrollTrigger.create({
   start: "40em 0%",
   end: "center+=200px center",
   scrub: 0.2,
-  onEnter: () => gsap.to('.white-to-black', {
+  onEnter: () => gsap.to('#explore-text', {
+    color: "hsla(0, 0%, 0%, 0.7)",
+    duration: 0.2,
+  }),
+  onLeave: () => gsap.to('#explore-text', {
     color: "hsla(0, 0%, 100%, 0.7)",
     duration: 0.2,
   }),
-  onLeave: () => gsap.to('.white-to-black', {
-    color: "hsla(0, 0%, 0%, 0.7)",
+    onLeaveBack: () => gsap.to('#explore-text', {
+    color: "hsla(0, 0%, 100%, 0.7)",
     duration: 0.2,
   }),
-    onLeaveBack: () => gsap.to('.white-to-black', {
-    color: "hsla(0, 0%, 0%, 0.7)",
-    duration: 0.2,
-  }),
-  onEnterBack: () => gsap.to('.white-to-black', {
+  onEnterBack: () => gsap.to('#explore-text', {
     color: "hsla(0, 0%, 100%, 0.7)",
     duration: 0.2,
   }),
